@@ -6,7 +6,7 @@
   "module": "lib/index.js",
   "scripts": {
     "__internal__prettier": "prettier 'src/**/*.js*'",
-    "build": "webpack --config config/webpack.js && cp README.md lib/README.md",
+    "build": "webpack --config config/webpack.js && copy README.md lib/README.md",
     "clean": "rm -rf index.* lib/",
     "demo": "parcel demo/index.html",
     "format": "npm run __internal__prettier -- --write",
